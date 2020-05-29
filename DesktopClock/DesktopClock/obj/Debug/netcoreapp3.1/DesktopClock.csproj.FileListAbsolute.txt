@@ -1,0 +1,15 @@
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.csprojAssemblyReference.cache
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.FormClock.resources
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.csproj.GenerateResource.cache
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.AssemblyInfoInputs.cache
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.AssemblyInfo.cs
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\bin\Debug\netcoreapp3.1\DesktopClock.exe
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\bin\Debug\netcoreapp3.1\DesktopClock.deps.json
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\bin\Debug\netcoreapp3.1\DesktopClock.runtimeconfig.json
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\bin\Debug\netcoreapp3.1\DesktopClock.runtimeconfig.dev.json
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\bin\Debug\netcoreapp3.1\DesktopClock.dll
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\bin\Debug\netcoreapp3.1\DesktopClock.pdb
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.dll
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.pdb
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.genruntimeconfig.cache
