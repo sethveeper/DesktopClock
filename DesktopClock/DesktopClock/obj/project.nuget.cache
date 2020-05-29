@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mOhhpoMr6bGWseO70wr7C7QT5lUxnZAsYWB7oAJrCYiBpZxZJU4PoJweEukbBumT1fiNdbseiZrenV8b2/IPyw==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\GitHub\\DesktopClock\\DesktopClock\\DesktopClock\\DesktopClock.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Seth Veeper\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
