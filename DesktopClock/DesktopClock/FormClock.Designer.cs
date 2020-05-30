@@ -29,20 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClock));
             this.panelClock = new System.Windows.Forms.Panel();
             this.labelClock = new System.Windows.Forms.Label();
-            this.labelSettings = new System.Windows.Forms.Label();
             this.panelSettings = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.UpDownFontSize = new System.Windows.Forms.NumericUpDown();
+            this.checkAlwaysTop = new System.Windows.Forms.CheckBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelTimer = new System.Windows.Forms.Panel();
             this.labelTimer = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.buttonClock = new System.Windows.Forms.Button();
+            this.imageListButtons = new System.Windows.Forms.ImageList(this.components);
             this.buttonSettings = new System.Windows.Forms.Button();
             this.buttonTimer = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.panelClock.SuspendLayout();
             this.panelSettings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UpDownFontSize)).BeginInit();
             this.panelMain.SuspendLayout();
             this.panelTimer.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -70,28 +75,54 @@
             this.labelClock.TabIndex = 0;
             this.labelClock.Text = "It Tiem!";
             // 
-            // labelSettings
-            // 
-            this.labelSettings.AutoSize = true;
-            this.labelSettings.BackColor = System.Drawing.Color.Transparent;
-            this.labelSettings.Location = new System.Drawing.Point(0, 0);
-            this.labelSettings.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.labelSettings.Name = "labelSettings";
-            this.labelSettings.Size = new System.Drawing.Size(143, 37);
-            this.labelSettings.TabIndex = 0;
-            this.labelSettings.Text = "It Settings!";
-            // 
             // panelSettings
             // 
             this.panelSettings.AutoSize = true;
-            this.panelSettings.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelSettings.BackColor = System.Drawing.Color.Transparent;
-            this.panelSettings.Controls.Add(this.labelSettings);
-            this.panelSettings.Location = new System.Drawing.Point(0, 124);
+            this.panelSettings.Controls.Add(this.button1);
+            this.panelSettings.Controls.Add(this.UpDownFontSize);
+            this.panelSettings.Controls.Add(this.checkAlwaysTop);
+            this.panelSettings.Location = new System.Drawing.Point(136, 4);
             this.panelSettings.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.panelSettings.Name = "panelSettings";
-            this.panelSettings.Size = new System.Drawing.Size(149, 37);
+            this.panelSettings.Size = new System.Drawing.Size(328, 186);
             this.panelSettings.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(102, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 33);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Change Font Size";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // UpDownFontSize
+            // 
+            this.UpDownFontSize.BackColor = System.Drawing.Color.Black;
+            this.UpDownFontSize.ForeColor = System.Drawing.Color.White;
+            this.UpDownFontSize.Location = new System.Drawing.Point(21, 108);
+            this.UpDownFontSize.Name = "UpDownFontSize";
+            this.UpDownFontSize.Size = new System.Drawing.Size(75, 43);
+            this.UpDownFontSize.TabIndex = 2;
+            this.UpDownFontSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // checkAlwaysTop
+            // 
+            this.checkAlwaysTop.AutoSize = true;
+            this.checkAlwaysTop.Location = new System.Drawing.Point(21, 33);
+            this.checkAlwaysTop.Name = "checkAlwaysTop";
+            this.checkAlwaysTop.Size = new System.Drawing.Size(210, 41);
+            this.checkAlwaysTop.TabIndex = 1;
+            this.checkAlwaysTop.Text = "Always On Top";
+            this.checkAlwaysTop.UseVisualStyleBackColor = true;
+            this.checkAlwaysTop.CheckedChanged += new System.EventHandler(this.checkAlwaysTop_CheckedChanged);
             // 
             // panelMain
             // 
@@ -100,9 +131,9 @@
             this.panelMain.Controls.Add(this.panelTimer);
             this.panelMain.Controls.Add(this.panelClock);
             this.panelMain.Controls.Add(this.panelSettings);
-            this.panelMain.Location = new System.Drawing.Point(148, 12);
+            this.panelMain.Location = new System.Drawing.Point(12, 76);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(155, 168);
+            this.panelMain.Size = new System.Drawing.Size(470, 197);
             this.panelMain.TabIndex = 2;
             // 
             // panelTimer
@@ -136,38 +167,53 @@
             this.panelMenu.Controls.Add(this.buttonTimer);
             this.panelMenu.Location = new System.Drawing.Point(12, 12);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(129, 164);
+            this.panelMenu.Size = new System.Drawing.Size(189, 61);
             this.panelMenu.TabIndex = 3;
             // 
             // buttonClock
             // 
+            this.buttonClock.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonClock.BackColor = System.Drawing.Color.Black;
             this.buttonClock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClock.ImageIndex = 0;
+            this.buttonClock.ImageList = this.imageListButtons;
             this.buttonClock.Location = new System.Drawing.Point(0, 0);
             this.buttonClock.Name = "buttonClock";
-            this.buttonClock.Size = new System.Drawing.Size(126, 50);
+            this.buttonClock.Size = new System.Drawing.Size(58, 58);
             this.buttonClock.TabIndex = 2;
-            this.buttonClock.Text = "Clock";
             this.buttonClock.UseVisualStyleBackColor = false;
+            // 
+            // imageListButtons
+            // 
+            this.imageListButtons.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageListButtons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListButtons.ImageStream")));
+            this.imageListButtons.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListButtons.Images.SetKeyName(0, "stopwatch.png");
+            this.imageListButtons.Images.SetKeyName(1, "duration.png");
+            this.imageListButtons.Images.SetKeyName(2, "cog.png");
             // 
             // buttonSettings
             // 
+            this.buttonSettings.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSettings.Location = new System.Drawing.Point(0, 112);
+            this.buttonSettings.ImageIndex = 2;
+            this.buttonSettings.ImageList = this.imageListButtons;
+            this.buttonSettings.Location = new System.Drawing.Point(128, 0);
             this.buttonSettings.Name = "buttonSettings";
-            this.buttonSettings.Size = new System.Drawing.Size(126, 49);
+            this.buttonSettings.Size = new System.Drawing.Size(58, 58);
             this.buttonSettings.TabIndex = 2;
-            this.buttonSettings.Text = "Settings";
             this.buttonSettings.UseVisualStyleBackColor = true;
             // 
             // buttonTimer
             // 
+            this.buttonTimer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonTimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTimer.Location = new System.Drawing.Point(0, 56);
+            this.buttonTimer.ImageIndex = 1;
+            this.buttonTimer.ImageList = this.imageListButtons;
+            this.buttonTimer.Location = new System.Drawing.Point(64, 0);
             this.buttonTimer.Name = "buttonTimer";
-            this.buttonTimer.Size = new System.Drawing.Size(126, 50);
+            this.buttonTimer.Size = new System.Drawing.Size(58, 58);
             this.buttonTimer.TabIndex = 2;
-            this.buttonTimer.Text = "Timer";
             this.buttonTimer.UseVisualStyleBackColor = true;
             // 
             // timer
@@ -189,6 +235,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.MaximizeBox = false;
             this.Name = "FormClock";
             this.Text = "FormClock";
             this.Load += new System.EventHandler(this.FormClock_Load);
@@ -196,6 +243,7 @@
             this.panelClock.PerformLayout();
             this.panelSettings.ResumeLayout(false);
             this.panelSettings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UpDownFontSize)).EndInit();
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
             this.panelTimer.ResumeLayout(false);
@@ -210,7 +258,6 @@
 
         private System.Windows.Forms.Panel panelClock;
         private System.Windows.Forms.Label labelClock;
-        private System.Windows.Forms.Label labelSettings;
         private System.Windows.Forms.Panel panelSettings;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panelMenu;
@@ -220,5 +267,10 @@
         private System.Windows.Forms.Panel panelTimer;
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.Button buttonClock;
+        private System.Windows.Forms.CheckBox checkAlwaysTop;
+
+        private System.Windows.Forms.NumericUpDown UpDownFontSize;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ImageList imageListButtons;
     }
 }
