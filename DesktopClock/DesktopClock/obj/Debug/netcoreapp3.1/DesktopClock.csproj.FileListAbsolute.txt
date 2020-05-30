@@ -13,3 +13,4 @@ D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\bin\Debug\netcoreapp3
 D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.dll
 D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.pdb
 D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.genruntimeconfig.cache
+D:\Documents\GitHub\DesktopClock\DesktopClock\DesktopClock\obj\Debug\netcoreapp3.1\DesktopClock.Properties.Resources.resources
